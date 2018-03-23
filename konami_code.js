@@ -4,6 +4,7 @@ var keypresses = [];
 
 function init() {
   //Add event listeners
+  
 }
 
 function detectKeys(e){
