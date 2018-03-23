@@ -36,5 +36,4 @@ function detectKeys(e){
   if (correct === 10){
     alert("Neva gunna give you up, neva gunna let you doowwwnn");
   }
-  }
 }
