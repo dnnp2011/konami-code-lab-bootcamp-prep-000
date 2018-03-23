@@ -15,7 +15,7 @@ function detectKeys(e){
   let key = e.detail || e.which;
   console.log(key);
   if (keypresses.length === 10){
-    console.log(`removed keypress ${keypresses.shift()}`);
+    keypresses.shift();
   }
   else if (keypresses.length > 10){
     console.log(`Something went wrong. There are ${keypresses.length} elements in keypresses`);
