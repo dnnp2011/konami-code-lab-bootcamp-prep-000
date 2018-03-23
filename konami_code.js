@@ -5,7 +5,7 @@ var keypresses = [];
 function init() {
   //Add event listeners
   var detector = document.querySelector('#detector');
-  detector.addEventListener('keypress', detectKeys);
+  detector.addEventListener('keydown', detectKeys);
 }
 
 function detectKeys(e){
