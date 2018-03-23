@@ -12,5 +12,5 @@ function detectKeys(e){
   //Call on event
   //Add keys to Array
   //If array is full, check if presses match konamiCode
-  console.log(e.key);
+  console.log(e.);
 }
