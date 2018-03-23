@@ -5,11 +5,12 @@ var keypresses = [];
 function init() {
   //Add event listeners
   var detector = document.querySelector('#detector');
-  detector.addEventListener('press', detectKeys);
+  detector.addEventListener('keypress', detectKeys);
 }
 
 function detectKeys(e){
   //Call on event
   //Add keys to Array
   //If array is full, check if presses match konamiCode
+  console.log(e.key);
 }
