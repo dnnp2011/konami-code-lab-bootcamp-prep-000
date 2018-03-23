@@ -9,21 +9,22 @@ function init() {
 }
 
 function detectKeys(e){
-  //Call on event
-  //Add keys to Array
-  //If array is full, check if presses match konamiCode
   let key = e.detail || e.which;
-  console.log(key);
+  
+  //If key history is full, remove elment from beginning
   if (keypresses.length === 10){
     keypresses.shift();
   }
+  //Bug catcher
   else if (keypresses.length > 10){
     console.log(`Something went wrong. There are ${keypresses.length} elements in keypresses`);
     keypresses.length = 9;
   }
   
+  //Add new key to end of array
   keypresses.push(key);
   
+  //Count how many elements in array are correct
   let correct = 0;
   if (keypresses.length === 10){
     for(let i = 0; i < keypresses.length; i++){
@@ -33,6 +34,7 @@ function detectKeys(e){
     }
   }
   
+  //If all 10 are correct, throw alert
   if (correct === 10){
     alert("Neva gunna give you up, neva gunna let you doowwwnn");
   }
