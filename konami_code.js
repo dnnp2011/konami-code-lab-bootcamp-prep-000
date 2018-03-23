@@ -13,4 +13,7 @@ function detectKeys(e){
   //Add keys to Array
   //If array is full, check if presses match konamiCode
   console.log(e.detail || e.which);
+  if (keypresses.length < 10){
+    keypresses.push()
+  }
 }
